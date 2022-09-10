@@ -1,0 +1,126 @@
+.left-container {
+    .pokemon-img-container {
+        background-color: #c9ccc7;
+        height: 18rem;
+        width: 18rem;
+        border: 1.5rem solid transparent;
+        border-radius: 5000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 32%;
+        left: 25%;
+
+        .pokemon-img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.navigation {
+    position: absolute;
+    top: 75.5%;
+    left: 78%;
+
+    img {
+        height: 2.2rem;
+        width: 2.2rem;
+        filter: blur(0.8px);
+    }
+
+    .right {
+        position: absolute;
+        top: 175%;
+        left: 180%;
+    }
+
+    .down {
+        position: absolute;
+        top: 360%;
+        left: 0;
+    }
+
+    .left {
+        position: absolute;
+        top: 175%;
+        right: 180%;
+    }
+
+    & div {
+        cursor: pointer;
+    }
+}
+
+.logo-container {
+    position: absolute;
+    top: 85.5%;
+    left: 25%;
+}
+
+.search-pokemon {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    top: 4%;
+    left: 9%;
+
+    .btn {
+        background-color: #7b9bc5;
+        height: 4.1rem;
+        width: 4.1rem;
+        padding: 0.4rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        svg {
+            height: 2.8rem;
+            width: 2.8rem;
+            color: #60656c;
+            stroke-width: 10%;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .input {
+        font-family: inherit;
+        background-color: transparent;
+        font-size: 18px;
+        padding: 15px;
+        height: 4.1rem;
+        width: 0px;
+        border-top-right-radius: 1000px;
+        border-bottom-right-radius: 1000px;
+        transition: width 0.3s ease;
+
+        &::placeholder {
+            color: transparent;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.search-pokemon.active .input {
+    width: 200px;
+    background-color: #d0d4cc;
+    border-left: none;
+    &::placeholder {
+        color: #696969;
+    }
+}
+
+.search-pokemon.active .btn {
+    background-color: #d0d4cc;
+    border-top-left-radius: 1000px;
+    border-bottom-left-radius: 1000px;
+}

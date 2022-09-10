@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+    border: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    scale: 125%;
+}
+
+.container {
+    position: relative;
+    img {
+        height: 100rem;
+        width: 100rem;
+    }
+}
+
+.logo-container {
+    position: absolute;
+    top: 74.4%;
+    left: 18%;
+
+    img {
+        height: 6rem;
+        width: 12rem;
+    }
+}
+
+.left-container {
+    height: 66.8rem;
+    width: 40.1rem;
+    position: absolute;
+    top: 17.5%;
+    left: 7.9%;
+    border-radius: 5px;
+}
+
+.right-container {
+    height: 47.5rem;
+    width: 32rem;
+    background-color: #a9d7ac;
+    position: absolute;
+    top: 35%;
+    right: 11%;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 62.5em) {
+    body {
+        scale: 100%;
+    }
+}
+
+@media only screen and (max-width: 50em) {
+    body {
+        scale: 90%;
+    }
+}

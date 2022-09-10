@@ -1,0 +1,12 @@
+-   id
+-   name
+-   types
+-   height
+-   weight
+-   stats
+    -   hp
+    -   speed
+    -   attack
+    -   defense
+    -   special-attack
+    -   special-defence
